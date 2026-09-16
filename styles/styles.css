@@ -1,0 +1,687 @@
+.inicio{
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    font-size: 56px;
+    letter-spacing: 1.7px;
+    text-align: center;
+    color: #8a8190;
+    margin-top: -32px;
+}
+
+.icono-sonido box-icon{
+    fill: #ffffff;
+}
+
+h2{
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    font-size: 24px;
+    text-align: center;
+    color: #8a8190;
+    margin: 0;
+}
+
+body{
+    background-color: #0b0810;
+    color: #c7bfc9;
+    font-family: sans-serif;
+}
+
+p{
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    font-size: 24px;
+    text-align: center;
+    color: #8a8190;
+    margin: 0;
+}
+
+#bienvenida{
+    min-height: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 19px;
+    background-image:
+    linear-gradient(rgba(11,8,16,0.75), rgba(11,8,16,0.75)),
+    url('../imagenes/descarga.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.btn-opcion{
+    display: inline-block;
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    font-size: 17px;
+    color: #c7bfc9;
+    text-decoration: none;
+    border: 1px solid #9c7a3c;
+    padding: 11px 29px;
+    border-radius: 3px;
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.btn-opcion:hover{
+    background-color: #9c7a3c;
+    color: #0b0810;
+}
+
+.icono-sonido{
+    position: fixed;
+    bottom: 24px;
+    left: 24px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #9c7a3c;
+    background-color: rgba(11,8,16,0.6);
+    color: #c7bfc9;
+    font-size: 21px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.icono-sonido:hover{
+    background-color: #9c7a3c;
+}
+
+/* --- Chat tipo WhatsApp --- */
+
+.chat-contenedor{
+    max-width: 500px;
+    margin: 32px auto;
+    background-color: rgba(19, 15, 25, 0.75);
+    border: 1px solid rgba(156,122,60,0.25);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    overflow: hidden;
+    transition: transform 0.4s ease;
+}
+
+.chat-mensajes{
+    flex: 1;
+    overflow-y: auto;
+    padding: 19px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.mensaje{
+    max-width: 75%;
+    padding: 10px 16px;
+    border-radius: 12px;
+    border: 1px solid rgba(156,122,60,0.3);
+}
+
+.mensaje p{
+    font-size: 16px;
+    text-align: left;
+    margin: 0;
+    color: inherit;
+    }
+
+.autor-mensaje{
+    display: block;
+    font-size: 12px;
+    color: #9c7a3c;
+    margin-bottom: 3px;
+    font-style: normal;
+    letter-spacing: 0.4px;
+}
+
+.mensaje.recibido{
+    align-self: flex-start;
+    background-color: #1f1926;
+    color: #c7bfc9;
+    border-bottom-left-radius: 2px;
+}
+
+.mensaje.enviado{
+    align-self: flex-end;
+    background-color: #5c0f1f;
+    color: #f2e7ea;
+    border-bottom-right-radius: 2px;
+}
+
+.chat-input{
+    display: flex;
+    border-top: 1px solid rgba(156,122,60,0.25);
+    padding: 13px;
+    gap: 10px;
+    margin-top: auto;
+}
+
+.chat-input input{
+    flex: 1;
+    background-color: #0b0810;
+    border: 1px solid rgba(156,122,60,0.3);
+    border-radius: 20px;
+    padding: 10px 16px;
+    color: #c7bfc9;
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    outline: none;
+}
+
+.chat-input input::placeholder{
+    color: #8a8190;   
+}
+
+.chat-input button{
+    background-color: transparent;
+    color: #c7bfc9;
+    border: 2px solid #9c7a3c;
+    border-radius: 20px;
+    padding: 10px 22px;
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.chat-input button:hover{
+    background-color: #9c7a3c;
+    color: #0b0810;
+}
+
+.titulo-confesionario{
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    font-size: 88px;
+    letter-spacing: 2.6px;
+    text-align: center;
+    color: #8a8190;
+    margin-top: 48px;
+}
+
+#confesionario{
+    min-height: 900px;
+    background-image:linear-gradient(rgba(11,8,16,0.75), rgba(11,8,16,0.75)),
+    url('../imagenes/rosas.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 32px 16px;
+}
+
+.btn-decision{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    background-color: transparent;
+    color: #c7bfc9;
+    border: 1px solid #9c7a3c;
+    border-radius: 6px;
+    padding: 8px;
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-decision:hover{
+    background-color: #9c7a3c;
+    color: #0b0810;
+    }
+
+.panel-decision{
+    position: fixed;
+    top: 0;
+    right: -320px;
+    width: 280px;
+    height: 100%;
+    background-color: rgba(19, 15, 25, 0.95);
+    border-left: 1px solid rgba(156,122,60,0.3);
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    transition: right 0.4s ease;
+    z-index: 20;
+}
+
+.panel-decision.abierto{
+    right: 0;
+}
+
+.panel-decision p{
+    text-align: left;
+    color: #c7bfc9;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+body.panel-abierto .chat-contenedor{
+    transform: translateX(-160px);
+}
+
+.icono-panel{
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #9c7a3c;
+    background-color: rgba(11,8,16,0.6);
+    color: #c7bfc9;
+    cursor: pointer;
+    z-index: 21;
+    transition: right 0.4s ease, background-color 0.2s ease;
+}
+
+.icono-panel box-icon{
+    fill: #c7bfc9;
+}
+
+.icono-panel:hover{
+    background-color: #9c7a3c;
+}
+
+body.panel-abierto .icono-panel{
+    right: 300px;
+}
+
+/* --- Responsive (celulares) --- */
+@media (max-width: 600px){
+
+    .titulo-confesionario{
+        font-size: 45px;
+        margin-top: 32px;
+    }
+
+    .chat-contenedor{
+        max-width: 100%;
+        margin: 16px auto;
+        height: 500px;
+    }
+
+    .panel-decision{
+        width: 85%;
+        right: -100%;
+    }
+
+    body.panel-abierto .chat-contenedor{
+        transform: none;
+    }
+
+    .icono-sonido,
+    .icono-panel{
+        width: 42px;
+        height: 42px;
+        font-size: 18px;
+    }
+
+    .icono-panel{
+        bottom: 16px;
+    }
+
+    .icono-sonido{
+        left: 16px;
+        bottom: 16px;
+    }
+
+    .icono-panel{
+        right: 16px;
+    }
+
+    body.panel-abierto .icono-panel{
+        right: calc(85% + 8px);
+    }
+
+    .mensaje{
+        max-width: 88%;
+    }
+
+    .header-principal{
+        flex-direction: column;
+        gap: 0.8rem;
+        padding: 1rem;
+    }
+
+    .header-nav{
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .titulo-confesionario,
+    .titulo-recomendar{
+        font-size: 32px;
+        margin-top: 24px;
+    }
+
+    .inicio{
+        font-size: 36px;
+    }
+
+    h2, p{
+        font-size: 18px;
+    }
+
+    .form-libro{
+        max-width: 100%;
+        padding: 20px;
+        margin: 16px;
+    }
+
+    .grid-libros{
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        gap: 0.8rem;
+        padding: 0 0.8rem;
+    }
+
+    .tarjeta-libro img,
+    .tarjeta-libro .sin-portada{
+        width: 100%;
+        max-width: 120px;
+        height: 160px;
+    }
+}
+
+.label-foto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    border: 2px solid #9c7a3c;
+    border-radius: 8px;
+    color: #9c7a3c;
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.label-foto:hover{
+    background-color: rgba(156,122,60,0.15);
+}
+
+.label-foto box-icon{
+    fill: #9c7a3c;
+    width: 32px;
+    height: 32px;
+}
+
+.preview-foto{
+    max-width: 150px;
+    max-height: 200px;
+    border-radius: 6px;
+    border: 1px solid rgba(156,122,60,0.3);
+    align-self: center;
+    object-fit: cover;
+}
+
+.titulo-recomendar{
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    font-size: 72px;
+    letter-spacing: 2.2px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 48px;
+}
+
+.form-libro{
+    max-width: 400px;
+    width: 100%;
+    background-color: rgba(19, 15, 25, 0.75);
+    border: 1px solid rgba(156,122,60,0.25);
+    border-radius: 8px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+#recomendar{
+    min-height: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 32px 16px;
+    background-image:
+        linear-gradient(rgba(11,8,16,0.55), rgba(11,8,16,0.55)),
+        url('../imagenes/rosas.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.paso{
+    display: none;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.paso.activo{
+    display: flex;
+}
+
+.paso-titulo{
+    text-align: center;
+    color: #c7bfc9;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.botones-paso{
+    display: flex;
+    justify-content: space-between;
+    gap: 13px;
+}
+
+.btn-siguiente,
+.btn-atras{
+    flex: 1;
+    background-color: transparent;
+    border: 1px solid #9c7a3c;
+    border-radius: 6px;
+    padding: 10px;
+    color: #c7bfc9;
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-siguiente:hover,
+.btn-atras:hover{
+    background-color: #9c7a3c;
+    color: #0b0810;
+}
+
+.mensaje-exito{
+    display: none;
+    max-width: 400px;
+    width: 100%;
+    background-color: rgba(19, 15, 25, 0.75);
+    border: 1px solid rgba(156,122,60,0.4);
+    border-radius: 8px;
+    padding: 40px 32px;
+    margin-top: 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+    text-align: center;
+}
+
+.mensaje-exito.mostrar{
+    display: flex;
+}
+
+.mensaje-exito box-icon{
+    fill: #9c7a3c;
+    width: 48px;
+    height: 48px;
+}
+
+.mensaje-exito p{
+    color: #c7bfc9;
+}
+
+.mensaje-exito .btn-opcion{
+    margin-top: 8px;
+}
+
+.form-libro .btn-opcion{
+    color: #0b0810;
+}
+
+.form-libro .btn-opcion:hover{
+    color: #0b0810;
+}
+
+#lista-libros{
+    min-height: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 32px 16px;
+    background-image:
+        linear-gradient(rgba(11,8,16,0.7), rgba(11,8,16,0.7)),
+        url('../imagenes/rosas.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.grid-libros{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1.2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+.cargando-libros{
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.tarjeta-libro{
+    background-color: rgba(19, 15, 25, 0.8);
+    border: 1px solid rgba(156,122,60,0.3);
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+}
+
+.tarjeta-libro img{
+    width: 100%;
+    max-width: 140px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid rgba(156,122,60,0.3);
+}
+
+.tarjeta-libro .sin-portada{
+    width: 140px;
+    height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f1926;
+    border-radius: 6px;
+    border: 1px dashed rgba(156,122,60,0.3);
+    color: #4a4550;
+    font-size: 12px;
+}
+
+.tarjeta-libro h3{
+    font-family: 'Cormorant Garamond', serif;
+    color: #ffffff;
+    font-size: 20px;
+    margin: 4px 0 0;
+}
+
+.tarjeta-libro .autor-libro{
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    color: #8a8190;
+    font-size: 14px;
+}
+
+.estrella,
+.estrellas-tarjeta box-icon{
+    fill: #f5c518;
+    color: #f5c518;
+}
+.veces-recomendado{
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    color: #8a8190;
+    font-size: 13px;
+    margin-top: 2px;
+}
+.nav-libros{
+    display: flex;
+    gap: 0.8rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+/* --- Header con navegación --- */
+
+.header-principal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #0b0810;
+    border-bottom: 1px solid rgba(156,122,60,0.25);
+}
+
+.header-marca{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #c7bfc9;
+}
+
+.header-marca box-icon{
+    fill: #9c7a3c;
+}
+
+.header-nav{
+    display: flex;
+    gap: 1.8rem;
+}
+
+.header-nav a{
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    font-size: 1rem;
+    color: #c7bfc9;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.header-nav a:hover{
+    color: #9c7a3c;
+}

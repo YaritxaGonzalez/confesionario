@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recomendar un libro</title>
+</head>
+<body>
+
+    <header class="header-principal">
+        <div class="header-marca">
+            <box-icon name='book-heart' type='solid'></box-icon>
+            <span>El Confesionario</span>
+        </div>
+        <nav class="header-nav">
+            <a href="../index.html">Inicio</a>
+            <a href="confecionario.html">Confesar</a>
+            <a href="listalibro.html">Libros</a>
+            <a href="libros_prohibidos.html">Recomendar</a>
+        </nav>
+    </header>
+
+    <iframe
+    id="musica-fondo"
+    width="1"
+    height="1"
+    src="https://www.youtube.com/embed/ZTiTgqak9ZE?autoplay=1&loop=1&playlist=ZTiTgqak9ZE&controls=0&enablejsapi=1"
+    frameborder="0"
+    allow="autoplay"
+    style="position:absolute; opacity:0; pointer-events:none;">
+    </iframe>
+
+    <button id="btn-sonido" class="icono-sonido">
+        <box-icon type='solid' name='volume-mute'></box-icon>
+    </button>
+    
+    <section id="recomendar">
+        <h1 class="titulo-recomendar">Recomienda un libro prohibido</h1>
+        <p>Comparte esa historia que te robó el sueño.</p>
+
+        <form id="form-libro" class="form-libro">
+
+            <div class="paso activo" data-paso="1">
+                <p class="paso-titulo">¿Cómo se llama el libro?</p>
+                <input type="text" id="input-nombre-libro" placeholder="Nombre del libro">
+                <button type="button" class="btn-siguiente">Siguiente</button>
+            </div>
+
+            <div class="paso" data-paso="2">
+                <p class="paso-titulo">¿Quién lo escribió?</p>
+                <input type="text" id="input-autor" placeholder="Autor">
+                <div class="botones-paso">
+                    <button type="button" class="btn-atras">Atrás</button>
+                    <button type="button" class="btn-siguiente">Siguiente</button>
+                </div>
+            </div>
+
+            <div class="paso" data-paso="3">
+                <p class="paso-titulo">Agrega una portada (opcional)</p>
+
+                <label for="input-foto" class="label-foto">
+                    <box-icon name='image-add'></box-icon>
+                    <span>Agregar portada</span>
+                </label>
+                <input type="file" id="input-foto" accept="image/*" hidden>
+                <img id="preview-foto" class="preview-foto" hidden>
+
+                <div class="botones-paso">
+                    <button type="button" class="btn-atras">Atrás</button>
+                    <button type="button" class="btn-siguiente">Siguiente</button>
+                </div>
+            </div>
+
+            <div class="paso" data-paso="4">
+                <p class="paso-titulo">¿Qué calificación le das?</p>
+
+                <div class="estrellas" id="estrellas">
+                    <box-icon name='star' type='regular' class="estrella" data-valor="1"></box-icon>
+                    <box-icon name='star' type='regular' class="estrella" data-valor="2"></box-icon>
+                    <box-icon name='star' type='regular' class="estrella" data-valor="3"></box-icon>
+                    <box-icon name='star' type='regular' class="estrella" data-valor="4"></box-icon>
+                    <box-icon name='star' type='regular' class="estrella" data-valor="5"></box-icon>
+                </div>
+
+                <div class="botones-paso">
+                    <button type="button" class="btn-atras">Atrás</button>
+                    <button type="submit" class="btn-opcion">Enviar recomendación</button>
+                </div>
+            </div>
+
+        </form>
+
+        <div class="mensaje-exito" id="mensaje-exito">
+            <box-icon name='check-circle' type='solid'></box-icon>
+            <p>¡Tu recomendación ha sido agregada!</p>
+            <a href="../index.html" class="btn-opcion">Volver al inicio</a>
+        </div>
+
+    </section>
+
+    <script src="../scrip/scrip.js"></script>
+
+</body>
+</html>

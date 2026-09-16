@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libros prohibidos</title>
+</head>
+<body>
+
+    <header class="header-principal">
+        <div class="header-marca">
+            <box-icon name='book-heart' type='solid'></box-icon>
+            <span>El Confesionario</span>
+        </div>
+        <nav class="header-nav">
+            <a href="../index.html">Inicio</a>
+            <a href="confecionario.html">Confesar</a>
+            <a href="listalibro.html">Libros</a>
+            <a href="libros_prohibidos.html">Recomendar</a>
+        </nav>
+    </header>
+
+    <iframe
+    id="musica-fondo"
+    width="1"
+    height="1"
+    src="https://www.youtube.com/embed/ZTiTgqak9ZE?autoplay=1&loop=1&playlist=ZTiTgqak9ZE&controls=0&enablejsapi=1"
+    frameborder="0"
+    allow="autoplay"
+    style="position:absolute; opacity:0; pointer-events:none;">
+    </iframe>
+
+    <button id="btn-sonido" class="icono-sonido">
+        <box-icon type='solid' name='volume-mute'></box-icon>
+    </button>
+
+    <section id="lista-libros">
+        <h1 class="titulo-recomendar">Libros prohibidos</h1>
+        <p>Historias que te recomienda otros pecadores.</p>
+
+        <div class="grid-libros" id="grid-libros">
+            <p class="cargando-libros">Buscando libros prohibidos...</p>
+        </div>
+
+    </section>
+
+    <script src="../scrip/scrip.js"></script>
+
+</body>
+</html>

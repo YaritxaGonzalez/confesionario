@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONFECIONARIO</title>
+</head>
+<body>
+
+    <header class="header-principal">
+        <div class="header-marca">
+            <box-icon name='book-heart' type='solid'></box-icon>
+            <span>El Confesionario</span>
+        </div>
+        <nav class="header-nav">
+            <a href="../index.html">Inicio</a>
+            <a href="confecionario.html">Confesar</a>
+            <a href="listalibro.html">Libros</a>
+            <a href="libros_prohibidos.html">Recomendar</a>
+        </nav>
+    </header>
+
+    <iframe
+        id="musica-fondo"
+        width="1"
+        height="1"
+        src="https://www.youtube.com/embed/ZTiTgqak9ZE?autoplay=1&loop=1&playlist=ZTiTgqak9ZE&controls=0&enablejsapi=1"
+        frameborder="0"
+        allow="autoplay"
+        style="position:absolute; opacity:0; pointer-events:none;">
+    </iframe>
+
+    <button id="btn-sonido" class="icono-sonido">
+        <box-icon type='solid' name='volume-mute'></box-icon>
+    </button>
+
+    <section id="confesionario">
+        <h1 class="titulo-confesionario">Confesionario</h1>
+
+        <div class="chat-contenedor">
+        <div class="chat-mensajes" id="chat-mensajes">
+            
+
+            <div class="mensaje recibido">
+            <p>Habla alma perdida. Te escucho sin juzgarte.</p>
+            </div>
+
+            <div class="mensaje recibido">
+            <p>Antes de comenzar, dime... ¿cómo te llamas, alma perdida?</p>
+            </div>
+            
+            
+
+        </div>
+
+            <div class="chat-input">
+                <input type="text" id="input-mensaje" placeholder="Escribe tu confesión...">
+                <button id="btn-enviar">Enviar</button>
+            </div>
+        </div>
+        <button id="btn-panel-toggle" class="icono-panel">
+            <box-icon type='solid' name='comment-detail'></box-icon>
+        </button>
+        
+        <div class="panel-decision" id="panel-decision">
+            <p id="panel-bienvenida"></p>
+
+            <div class="chat-mensajes" id="panel-mensajes"></div>
+
+            <div class="chat-input">
+                <input type="text" id="input-panel" placeholder="Escribe algo...">
+                <button id="btn-enviar-panel">Enviar</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="../scrip/scrip.js"></script>
+
+</body>
+</html>
